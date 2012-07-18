@@ -1,6 +1,6 @@
 h1. Hi there
 
-This is my silly little project. It's a View you can place anywhere that will display a Holo-themed animated progress/loading spinning circle thing.
+This is my silly little project. It's a View you can place anywhere that will display a Holo-themed animated progress/loading spinning circle thing. It will look the same and function properly on pretty much all versions of Android.
 
 It's designed to be easy to use. Setup involves 3 easy steps (if you use Eclipse):
 
