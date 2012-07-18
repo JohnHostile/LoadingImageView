@@ -40,9 +40,9 @@ bc. <com.sudomakemeanapp.sudowidget.LoadingImageView
 
 There are three custom attributes:
 
-* liv_startShown: Determines if the animation is showing upon launch. Defaults to true.
-* liv_expandImageBeyondDrawableSize: Determines if the image will expand beyond it's natural size. Defaults to false.
-* liv_imageSize: Determines which size of Drawable is used. Values are _sizeLarge_, _sizeMedium_, _sizeSmall_, and _sizeTiny_. Defaults to _sizeLarge_.
+* _liv_startShown_: Determines if the animation is showing upon launch. Defaults to true.
+* _liv_expandImageBeyondDrawableSize_: Determines if the image will expand beyond it's natural size. Defaults to false.
+* _liv_imageSize_: Determines which size of Drawable is used. Values are _sizeLarge_, _sizeMedium_, _sizeSmall_, and _sizeTiny_. Defaults to _sizeLarge_.
 
 I think that's it. Let me know if I forgot anything. If you have anything to say to me, you can find me on Google+: https://plus.google.com/104570711580136846518
 
