@@ -20,9 +20,9 @@ h1. "Advanced" usage
 
 There are few methods to know about in the *LoadingImageView* class. _startLoadingAnimation()_ and _stopLoadingAnimation()_ are two of them and I named them to be self-documenting. If you can't figure them out, maybe you shouldn't use this library!
 
-*setImageExpandBeyondDrawableSize(boolean)* is another. If you set this to true, then the image will stretch beyond the size of the drawable. It'll get grainy, but it'll stretch as big as you want.
+_setImageExpandBeyondDrawableSize(boolean)_ is another. If you set this to true, then the image will stretch beyond the size of the drawable. It'll get grainy, but it'll stretch as big as you want.
 
-*setImageSize(int)* is the last. It will determine the size of the drawable used for the animation. If you need to fit an animation in a tight space, for example, you'll probably want to use a smaller drawable. Use the statics in the class to set the size. For example, *LoadingImageView*._SIZE_LARGE_ is the default size. It's simple, you'll figure it out.
+_setImageSize(int)_ is the last. It will determine the size of the drawable used for the animation. If you need to fit an animation in a tight space, for example, you'll probably want to use a smaller drawable. Use the statics in the class to set the size. For example, *LoadingImageView*._SIZE_LARGE_ is the default size. It's simple, you'll figure it out.
 
 There are also three custom attributes that you can use from XML to customize some of this instead of having to write Java code for it (I don't know anyone who wants to write more Java code). To set that up, under the xmlns:android in your layout files, add another xml namespace
 
