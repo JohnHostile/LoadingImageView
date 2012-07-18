@@ -7,6 +7,7 @@ It's designed to be easy to use. Setup involves 3 easy steps (if you use Eclipse
 *# Download the code from this repo, put it somewhere, and add that as an "Android Project from Existing Code".
 *# In your project properties, add the library project you just added in the "Libraries" section in the "Android" category.
 *# There are only 2 steps, sorry.
+*# How do I sto
 
 Once you're set up, just add this anywhere in a layout:
 
