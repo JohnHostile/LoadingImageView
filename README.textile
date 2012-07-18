@@ -1,0 +1,63 @@
+h1 Hi there
+
+This is my silly little project. It's a View you can place anywhere that will display a Holo-themed animated progress/loading spinning circle thing.
+
+It's designed to be easy to use. Setup involves 3 easy steps (if you use Eclipse):
+
+*# Download the code from this repo, put it somewhere, and add that as an "Android Project from Existing Code".
+*# In your project properties, add the library project you just added in the "Libraries" section in the "Android" category.
+*# There are only 2 steps, sorry.
+
+Once you're set up, just add this anywhere in a layout:
+
+bc. <com.sudomakemeanapp.sudowidget.LoadingImageView
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"/>
+
+You can use it just like any other View. _layout_width_ and _layout_height_ can be anything you want. The image will maintain the proper aspect ratio, and shrink or expand up to the size of the Drawable.
+
+h1 "Advanced" usage
+
+There are few methods to know about in the *LoadingImageView* class. *startLoadingAnimation()* and *stopLoadingAnimation()* are two of them and I named them to be self-documenting. If you can't figure them out, maybe you shouldn't use this library!
+
+*setImageExpandBeyondDrawableSize(boolean)* is another. If you set this to true, then the image will stretch beyond the size of the drawable. It'll get grainy, but it'll stretch as big as you want.
+
+*setImageSize(int)* is the last. It will determine the size of the drawable used for the animation. If you need to fit an animation in a tight space, for example, you'll probably want to use a smaller drawable. Use the statics in the class to set the size. For example, LoadingImageView.SIZE_LARGE is the default size. It's simple, you'll figure it out.
+
+There are also three custom attributes that you can use from XML to customize some of this instead of having to write Java code for it (I don't know anyone who wants to write more Java code). To set that up, under the xmlns:android in your layout files, add another xml namespace
+
+bc. xmlns:sudo="http://schemas.android.com/apk/res-auto"
+
+Once that is done, you can add the custom attributes like this:
+
+bc. <com.sudomakemeanapp.sudowidget.LoadingImageView
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	sudo:liv_startShown="false"
+	sudo:liv_expandImageBeyondDrawableSize="true"
+	sudo:liv_imageSize="sizeMedium"/>
+
+There are three custom attributes:
+
+* liv_startShown: Determines if the animation is showing upon launch. Defaults to true.
+* liv_expandImageBeyondDrawableSize: Determines if the image will expand beyond it's natural size. Defaults to false.
+* liv_imageSize: Determines which size of Drawable is used. Values are _sizeLarge_, _sizeMedium_, _sizeSmall_, and _sizeTiny_. Defaults to _sizeLarge_.
+
+I think that's it. Let me know if I forgot anything. If you have anything to say to me, you can find me on Google+: https://plus.google.com/104570711580136846518
+
+
+h1 License
+	
+	 Copyright (C) 2012 John Hostile
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.

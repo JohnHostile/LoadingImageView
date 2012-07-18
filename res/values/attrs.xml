@@ -1,0 +1,12 @@
+<resources>
+	<declare-styleable name="LoadingImageView">
+	    <attr name="liv_startShown" format="boolean"/>
+	    <attr name="liv_expandImageBeyondDrawableSize" format="boolean"/>
+	    <attr name="liv_imageSize">
+	        <flag name="sizeLarge" value="1"/>
+	        <flag name="sizeMedium" value="2"/>
+	        <flag name="sizeSmall" value="3"/>
+	        <flag name="sizeTiny" value="4"/>
+	    </attr>	  	    
+	</declare-styleable>    
+</resources>
