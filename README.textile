@@ -1,4 +1,4 @@
-h1 Hi there
+h1. Hi there
 
 This is my silly little project. It's a View you can place anywhere that will display a Holo-themed animated progress/loading spinning circle thing.
 
@@ -16,7 +16,7 @@ bc. <com.sudomakemeanapp.sudowidget.LoadingImageView
 
 You can use it just like any other View. _layout_width_ and _layout_height_ can be anything you want. The image will maintain the proper aspect ratio, and shrink or expand up to the size of the Drawable.
 
-h1 "Advanced" usage
+h1. "Advanced" usage
 
 There are few methods to know about in the *LoadingImageView* class. *startLoadingAnimation()* and *stopLoadingAnimation()* are two of them and I named them to be self-documenting. If you can't figure them out, maybe you shouldn't use this library!
 
@@ -46,7 +46,7 @@ There are three custom attributes:
 I think that's it. Let me know if I forgot anything. If you have anything to say to me, you can find me on Google+: https://plus.google.com/104570711580136846518
 
 
-h1 License
+h1. License
 	
 	 Copyright (C) 2012 John Hostile
 
